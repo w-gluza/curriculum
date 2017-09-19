@@ -68,7 +68,7 @@ window.onscroll = function() {scrollFunction()};
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
 }
-
+/*
 [
   {path: „/business.html”, tags: „business economy management”},
   {path: „/communication.html”, tags: „communication selfdevelopment coreareas”},
@@ -80,7 +80,7 @@ window.onscroll = function() {scrollFunction()};
   {path: „/practical.html”, tags: „practical FAQ”},
   {path: „/general.html”, tags: „schedule general information”},
 ]
- /*
+
 var searchTags = {
     "communication",
     "design",
