@@ -26,14 +26,13 @@
               //MY CODE ENDS HERE -------------------------------------------------------
               if (opts.dropDown) {
                   $t.css("padding", "5px")
-                      .css("margin", "-5px -20px -5px -5px");
+                      .css("margin", "0px");
 
                   $t.wrap("<div id='__searchitWrapper" + $counter + "' />");
                   opts.wrp = $('#__searchitWrapper' + $counter);
                   opts.wrp.css("display", "inline-block")
                       .css("vertical-align", "top")
                       .css("overflow", "hidden")
-                      .css("border", "solid grey 1px")
                       .css("position", "absolute")
                       .hide();
                   if (opts.dropDownClass) opts.wrp.addClass(opts.dropDownClass);
@@ -113,7 +112,7 @@
                       left: tf.offset().left
                   });
                   _opts(lb).wrp.css("width", tf.outerWidth() + "px");
-                  lb.css("width", (tf.outerWidth() + 25) + "px");
+                  lb.css("width", (tf.outerWidth() + -2) + "px");
               }
           }
 
