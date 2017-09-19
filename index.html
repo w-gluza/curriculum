@@ -25,7 +25,7 @@
                             <li>
                                 <select id="listBox1" class="gn-icon gn-icon-search">
                                     <option></option>
-                                    <option>Robinhood</option>
+                                    <option onclick="foundSub()">Robinhood</option>
                                     <option>Rockford</option>
                                     <option>Rome</option>
                                     <option>Ronda</option>
@@ -56,6 +56,11 @@
     <script src="search.js"></script>
 
     <script>
+
+        function foundSub(){
+            window.location.replace('/programme.html');
+        }
+
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i;
