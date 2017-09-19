@@ -25,13 +25,35 @@
                             <li><a class="gn-icon gn-icon-search">
                                 <select id="listBox1">
                                     <option></option>
-                                    <option onclick="foundSub()">Robinhood</option>
-                                    <option>Rockford</option>
-                                    <option>Rome</option>
-                                    <option>Ronda</option>
-                                    <option>Rondon</option>
-                                    <option>Rondonopolis</option>
-                                    <option>Rongelap</option>
+                                    <option onclick="generalSearch()">Schedule</option>
+                                    <option onclick="generalSearch()">General</option>
+                                    <option onclick="generalSearch()">Information</option>
+                                    <option onclick="practicalSearch()">FAQ</option>
+                                    <option onclick="practicalSearch()">Practical</option>
+                                    <option onclick="practicalSearch()">Semester</option>
+                                    <option onclick="practicalSearch()">ECTS</option>
+                                    <option onclick="electiveSearch()">Internship</option>
+                                    <option onclick="electiveSearch()">Work</option>
+                                    <option onclick="electiveSearch()">Electives</option>
+                                    <option onclick="examSearch()">Exam</option>
+                                    <option onclick="examSearch()">Evaluation</option>
+                                    <option onclick="examSearch()">Grades</option>
+                                    <option onclick="examSearch()">Presentation</option>
+                                    <option onclick="examSearch()">Midterm</option>
+                                    <option onclick="examSearch()">Final</option>
+                                    <option onclick="programmeSearch()">Programme</option>
+                                    <option onclick="programmeSearch()">Web Debelopment</option>
+                                    <option onclick="programmeSearch()">Coding</option>
+                                    <option onclick="programmeSearch()">UX</option>
+                                    <option onclick="programmeSearch()">Programming</option>
+                                    <option onclick="programmeSearch()">Communication</option>
+                                    <option onclick="programmeSearch()">Design</option>
+                                    <option onclick="programmeSearch()">Business</option>
+                                    <option onclick="abroadSearch()">Abroad</option>
+                                    <option onclick="abroadSearch()">International</option>
+                                    <option onclick="abroadSearch()">Exchange</option>
+                                    <option onclick="abroadSearch()">Erasmus</option>
+
                                 </select> </a>
                             </li>
                             <li><a href="general.html" class="gn-icon gn-icon-general">General Information</a></li>
@@ -57,8 +79,28 @@
 
     <script>
 
-        function foundSub(){
+        function abroadSearch(){
+            window.location.replace('/abroad.html');
+        }
+
+        function examSearch(){
+            window.location.replace('/exam.html');
+        }
+
+        function electiveSearch(){
+            window.location.replace('/elective.html');
+        }
+
+        function programmeSearch(){
             window.location.replace('/programme.html');
+        }
+
+        function practicalSearch(){
+            window.location.replace('/practical.html');
+        }
+
+        function generalSearch(){
+            window.location.replace('/general.html');
         }
     </script>
 
