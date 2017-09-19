@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Business",
+        "contents": "The core area is intended to provide the student with the qualifications needed to incorporate organisational aspects into multimedia development and use, and to enable the student to plan, manage and carry out a development project.",
+        "introduction": "The student has gained development-based knowledge and an understanding of:",
+        "knowledge": ["- Key topics within multimedia-related commercial law, including copyright, data protection law and contract law ", "- Company’s control, communication and decision-making processes ", "- The possible organisational consequences of implementing multimedia productions in an organisation", "- Key methods and tools related to financial planning and control of multimedia productions", "- Key innovation and entrepreneurship topics."],
+        "skills": "- Assess the vision, mission and values as well as the strategy and culture of organisations in relation to multimedia productions.",
+        "competencies": ["- Apply relevant theories, methods and IT tools for planning, control and quality assurance of development projects", "- participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach", "- acquire new knowledge, skills and competencies of relevance to the profession."]
+},
+    {
+        "name": "Communication and Presentation",
+        "contents": "The core area is designed to contribute to the acquisition of the knowledge, skills and competencies needed to handle communication in relation to multimedia tasks. The student is able to handle communication channels and opportunities in complex organisations and networks, both locally and globally. ",
+        "introduction": "Needed qualifications for the student:",
+        "knowledge": ["- marketing theory and method ", "- Communicative tools, techniques and genres", "- Concepts in the field of media sociology"],
+        "skills": ["- Collect empirical data on target groups and situations", "- Produce communication", "- Describe a target group", "- Assess information architecture, including structuring, planning and communicating information xs", "- Plan and conduct user tests", "- Summarise a development project in the form of a report", "- Stakeholder presentations ", "- Apply communication elements in various media productions", "- Importance of cultural factors", "- Cultural identity and forms of expression", "- Communication strategies and forms of communication for undertaking multimedia tasks in a globalised society"],
+        "competencies": ["- Communication and marketing", "- Digital marketing", "- Interactive communication in multimedia products", "- Participate in teams based on a professional approach"]
+    },
+    {
+        "name": "Design and Visualisation",
+        "contents": "The core area is designed to enable the student to apply multimedia design and concept development principles on a methodological basis. The student is also to acquire the skills needed to design and develop interactive user interfaces for key digital platforms on a methodological basis.",
+        "introduction": "The student has gained development-based knowledge and an understanding of:",
+        "knowledge": ["Video and audio production", "methods for documenting design", "The history of design and aesthetics", "The connection between application and design ", "animation techniques", "Relation to narrative and production techniques"],
+        "skills": ["concept development ", "design user interfaces for different digital platforms ", "user-oriented design methods", "digital graphic design principles", " aesthetic styles in relation to the multimedia field", "graphic material for further digital production", "design-related problems and issues and possible solutions to stakeholders", "documenting interactive multimedia productions", " techniques for the production and post-processing of video and audio", "the choice of media mechanisms to stakeholders"],
+        "competencies": ["connection between message and design / identity and design", "design and development of interactive user interfaces", "the expression of digital media on different digital platforms", "participate in  teams based on a professional approach", "knowledge, skills and competencies of relevance to the profession"]
+},
+
+    {
+        "name": "Interaction Development",
+        "contents": "The student is supposed to model, format, structure, document and implement dynamic multimedia applications, have a basic understanding of system development and know how to structure and implement complex dynamic multimedia applications with the integration of databases.",
+        "introduction": "The student has gained development-based knowledge and an understanding of:",
+        "knowledge ": ["- Object-oriented programming in relation to multimedia practice", "- Technical possibilities and limitations of development environments practice", "- Elements of Content Management Systems (CMS)- practice", "- Interfaces for exchanging data with third party services", "- Security aspects of networks, multimedia applications and data communication."],
+        "skills": ["- Assess and apply key methods and tools for SEO", "- Prepare and present documentation", "- Assess and apply current formatting languages", "- Program client and server-based multimedia solutions", "- Use a database manipulation language  practice", "- Apply key methods for modelling data and implementing databases", "- Testing and troubleshooting."],
+        "competencies": ["- Manage to model, structure and format information", "- Model, structure and program functionality", "- Manage integration of different media types in multimedia applications", "- Handle data persistence for dynamic multimedia applications", "- Participate in team projects basing on a professional approach", "- Acquire competencies of relevance to the profession. "]
+},
+
+    {
+        "name": "Electives",
+        "contents": "Students can choose between elective subjects within one or more of the following subject areas: Business, Communication and Presentation, Interaction Development and Design and Visualisation.",
+        "introduction": "The student has gained development-based knowledge and an understanding of:",
+        "knowledge ": ["- The requirements and expectations of companies with regard to the multimedia designer’s knowledge, skills and attitudes towards the work ", "- The practice-related use of theory, method and tools"],
+        "skills": ["- Apply versatile technical and analytical working methods of relevance to employment with-in the profession", "- Assess practice-oriented issues and problems, and identify possible solutionS", "- Assess practice-oriented issues and problems, and identify possible solutions"],
+        "competencies ": ["- Handle development-oriented, practical and professional situations of relevance to the pro-fession", "- Acquire new knowledge, skills and competencies of relevance to the profession", "- Manage the structuring and planning of day-to-day tasks within the profession ", "- Participate in disciplinary and interdisciplinary cooperation based on a professional approach"]
+},
+
+    {
+        "name": "Internship",
+        "contents": "The internship in the fourth semester ensures that students acquire practical knowledge about the profession and learn how to tackle practical issues.",
+        "introduction": "The student has gained development-based knowledge and an understanding of:",
+        "knowledge": ["- The requirements and expectations of companies with regard to the multimedia designer’s knowledge, skills and attitudes towards the work", "- The practice-related use of theory, method and tools."],
+        "skills": ["- Versatile technical and analytical working methods of relevance to employment within the profession", "- Communicate practice-oriented issues and reasoned solution proposals", "- assess practice-oriented issues and problems, and identify possible solutions"],
+        "competences ": ["- Handle development-oriented, practical and professional situations of relevance to the profession", "- New knowledge, skills and competencies", "- Manage the structuring and planning of day-to-day tasks", "- Participate in disciplinary and interdisciplinary cooperation"]
+}
+]

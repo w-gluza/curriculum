@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Electives",
+        "contents": "Students can choose between elective subjects within one or more of the following subject areas: Business, Communication and Presentation, Interaction Development and Design and Visualisation.",
+        "introduction": "You will gain development-based knowledge and an understanding of:",
+        "knowledge": ["- the requirements and expectations of companies with regard to the multimedia designer’s knowledge, skills and attitudes towards the work,", "- the practice-related use of theory, method and tools."],
+        "introductionB": "You will acquire specific skills:",
+        "skills": ["- apply versatile technical and analytical working methods of relevance to employment within the profession,", "- assess practice-oriented issues and problems, and identify possible solutions,", "- assess practice-oriented issues and problems, and identify possible solutions."],
+        "introductionC": "You will gain competencies to:",
+        "competencies": ["- handle development-oriented, practical and professional situations of relevance to the profession,", "- acquire new knowledge, skills and competencies of relevance to the profession,", "- manage the structuring and planning of day-to-day tasks within the profession,", "- participate in disciplinary and interdisciplinary cooperation based on a professional approach."]
+}
+]

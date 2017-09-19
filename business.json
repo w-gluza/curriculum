@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Business",
+        "contents": "The core area is intended to provide the student with the qualifications needed to incorporate organisational aspects into multimedia development and use, and to enable the student to plan, manage and carry out a development project.",
+        "introduction": "You will gain development-based knowledge and an understanding of:",
+        "knowledge": ["- key topics within multimedia-related commercial law, including copyright, data protection law and contract law,", "- company’s control, communication and decision-making processes,", "- the possible organisational consequences of implementing multimedia productions in an organisation,", "- key methods and tools related to financial planning and control of multimedia productions,", "- key innovation and entrepreneurship topics."],
+        "introductionB": "You will acquire specific skills:",
+        "skills": ["- assess the vision, mission and values as well as the strategy and culture of organisations in relation to multimedia productions."],
+        "introductionC": "You will gain competencies to:",
+        "competencies": ["- apply relevant theories, methods and IT tools for planning, control and quality assurance of development projects,", "- participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach,", "- acquire new knowledge, skills and competencies of relevance to the profession."]
+}
+]

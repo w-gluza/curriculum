@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electives and Internship</title>
+    <meta name="description" content="Curriculum of Multimedia Design Program">
+    <meta name="author" content="Fuck Up Group">
+    <script src="https://use.fontawesome.com/497d596fa5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></head>
+
+<body id="elec">
+    <div class="prog-container">
+       <ul id="gn-menu" class="menu-top">
+                <li class="trigger">
+                    <a class="gn-icon gn-icon-menu"></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="scroller">
+                            <ul class="gn-menu">
+                            <li><a href="#" class="gn-icon gn-icon-search"><span>Search</span> </a></li>
+                            <li><a href="general.html" class="gn-icon gn-icon-general">General Information</a></li>
+                            <li><a href="practical.html" class="gn-icon gn-icon-practical">Programme Structure</a></li>
+                            <li><a href="programme.html" class="gn-icon gn-icon-program">Core Areas</a></li>
+                            <li><a href="elective.html" class="gn-icon gn-icon-elective">Electives and Internship</a></li>
+                            <li><a href="abroad.html" class="gn-icon gn-icon-abroad">Study Abroad</a></li>
+                            <li><a href="exam.html" class="gn-icon gn-icon-download">Examination</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+            </li>
+              <li><a href="index.html"><span>HOME</span></a></li>
+            <li><a href="http://kea.dk">KEA</a></li>
+        </ul>
+            <ul class="dashboard">
+                <li><a href="#" class="button" id="eleButton" onclick="getElectives('electvies.json')">Electives</a></li>
+                <li><a href="#" class="button" id="intButton"onclick="getInternship('internship.json')">Internship</a></li>
+            </ul>
+<section id="infoList"></section>
+    <template id="infoTemplate">
+       <article class="info">
+            <h2 class="name">NAME</h2>
+           <h4 class="contents">CONTENTS</h4>
+           <h3>Knowledge</h3>
+           <p class="introduction">INTRODUCTION</p>
+           <p class="knowledge">KNOWLEDGE</p>
+           <h3>Skills</h3>
+           <p class="introductionB">INTRODUCTIONB</p>
+            <p class="skills">SKILLS</p>
+           <h3>Competencies</h3>
+           <p class="introductionC">INTRODUCTIONC</p>
+            <p class="competencies">COMPETENCIES</p>
+           </article>
+    </template>
+        <button onclick="topFunction()" id="upButton"></button>
+    </div>
+   <script src="main.js"></script>
+     <script>
+
+         getElectives('electives.json'); //opens business info window with start of a page
+
+
+    let infoTemplate = document.querySelector('#infoTemplate').content;
+    let section = document.querySelector('#infoList');
+    let info = document.querySelector('.info');
+
+
+          function getData(file) {
+            fetch(file).then(function (response) {
+                return response.json();
+            }).then(function (json) {
+                return show(json);
+            });
+        }
+
+         function activeButton(button)
+         {
+            document.getElementById("eleButton").style.backgroundColor="";
+             document.getElementById("eleButton").style.color="";
+
+            document.getElementById("intButton").style.backgroundColor="";
+             document.getElementById("intButton").style.color="";
+
+             document.getElementById(button).style.backgroundColor="#ffffff";
+             document.getElementById(button).style.color="#525455";
+
+         }
+
+         function getElectives(file)
+         {
+              activeButton("eleButton");
+             clearBox("infoList");
+             getData(file);
+         }
+
+         function getInternship(file)
+         {
+             activeButton("intButton");
+             clearBox("infoList");
+             getData(file);
+         }
+
+
+            function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+}
+
+        function show(json) {
+            json.forEach(function(info){
+                let clone = infoTemplate.cloneNode(true);
+                clone.innerHTML='';
+                clone.querySelector('.name').textContent=info.name;
+                clone.querySelector('.contents').textContent=info.contents;
+                clone.querySelector('.introduction').textContent=info.introduction;
+
+                clone.querySelector('.knowledge').innerHTML = info.knowledge.join('<br/>');
+                clone.querySelector('.introductionB').textContent=info.introductionB;
+                clone.querySelector('.skills').innerHTML = info.skills.join('<br/>');
+                clone.querySelector('.introductionC').textContent=info.introductionC;
+                clone.querySelector('.competencies').innerHTML = info.competencies.join('<br/>');
+
+                section.appendChild(clone);
+
+            });
+        }
+        </script>
+</body>
+</html>

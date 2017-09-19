@@ -1,0 +1,551 @@
+/* Table of contents
+------------------------------
+- General Content
+- Header & Navigation
+- Typography
+- CSS Grid
+- Images & Media
+------------------------------ */
+
+
+/* General Content
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans');
+
+#index {                                            /*new working background14.09.17 10:43*/
+    background-image: url('background-01.jpg');
+   background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#index, #ass, #gen, #prac, #prog, #elec {
+    background-color: #F0F0F1;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* Header & Navigation
+------------------------------ */
+
+.menu-top,
+.menu-top ul {
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 60px;
+}
+
+.menu-top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+}
+
+.menu-top a {
+    display: block;
+    height: 100%;
+    color: #525355;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-top > li {
+    display: block;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #dfe7ea; /*right border of burger menu */
+    text-align: center;
+}
+
+.menu-top li.trigger {
+    position: relative;
+    width: 60px;
+}
+
+
+/* KEA link/logo */
+
+.menu-top > li:last-child {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #dfe7ea;
+}
+
+.menu-top > li > a {
+    padding: 0 30px;
+    font-size: 1.5em;
+}
+
+.gn-menu-wrapper {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 60px;
+    border-top: 1px solid #dfe7ea; /* top line of the open menu */
+    background: white;
+    transform: translateX(-60px);
+    transition: transform 0.3s, width 0.3s;
+}
+
+.scroller {
+    position: fixed;
+    overflow-y: scroll;
+    width: 370px;
+    height: 100%;
+}
+
+/* border of the last/bottom line in the menu, while is open*/
+.gn-menu {
+    border-bottom: 1px solid #dfe7ea;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* border of the nav categories */
+.gn-menu li:not(:first-child),
+.gn-menu li li {
+    box-shadow: inset 0 1px #dfe7ea
+}
+
+.gn-icon::before {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'fontAwesome';
+    line-height: 1;
+}
+
+.gn-icon-search::before {
+    content: "\f002";
+}
+
+.gn-icon-home::before {
+    content:"\f08a";
+}
+
+.gn-icon-general::before {
+    content: "\f19c";
+}
+
+.gn-icon-practical::before {
+    content: "\f0eb";
+}
+
+.gn-icon-program::before {
+    content: "\f0c6";
+}
+
+.gn-icon-download::before {
+    content: "\f097";
+}
+
+.gn-icon-elective::before {
+    content: "\f19d";
+}
+
+.gn-icon-abroad::before {
+    content: "\f0ac";
+}
+
+.gn-icon-search:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-home:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-general:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-practical:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-program:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-download:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-elective:hover{
+    background-color:#fccc5d;
+}
+
+.gn-icon-abroad:hover{
+    background-color:#fccc5d;
+}
+
+/* burger menu BEFORE open */
+.gn-icon-menu::before {
+    margin-left: -15px;
+    vertical-align: -2px;
+    width: 30px;
+    height: 3px;
+    background: #525355;
+    box-shadow: 0 3px white, 0 -6px #525355, 0 -9px white, 0 -12px #525355;
+    content: '';
+}
+
+/* burger menu AFTER open */
+.gn-icon-menu.gn-selected::before {
+    background: #fccc5d;
+    box-shadow: 0 3px white, 0 -6px #fccc5d, 0 -9px white, 0 -12px #fccc5d;
+}
+
+
+/* styles for opening nav */
+
+.gn-menu-wrapper.gn-open-all,
+.gn-menu-wrapper.gn-open-part {
+    transform: translateX(0px);
+}
+
+.gn-menu-wrapper.gn-open-all {
+    width: 340px
+}
+
+.gn-menu-wrapper.gn-open-all li {
+    height: 60px
+}
+
+@media screen and (max-width: 520px) {
+    .gn-menu-wrapper.gn-open-all {
+        transform: translateX(0px);
+        width: 100%;
+    }
+    .gn-menu-wrapper.gn-open-all {
+        width: 130%
+    }
+}
+
+
+/* Typography
+------------------------------ */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #292929;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 250px;
+}
+
+.slogan span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: white;
+    line-height: 45px;
+    box-shadow: 15px 0 0px 0px #fff, -15px 0 0px 0px #fff;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+
+/* CSS Grid
+------------------------------ */
+
+section{
+    margin: 0 5% 5% 5%;
+    padding: 1em;}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    margin: 25% 5% 5% 5%;}
+
+@media (min-width: 768px) {
+
+section{
+    margin: 1% 18% 1% 18%;
+    padding: 1em;}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 12% 18% 2% 18%;}
+
+    /* General Information */
+
+.wiola-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 10% 15% 10% 15%;
+    grid-gap: 0px;
+      }
+
+.b, .bb, .bbb, .bbbb{
+   background-color: #2C4054;
+    min-height: 200px;
+    margin: 0px;
+}
+.c, .cc, .ccc, .ccc, .cccc{
+   background-color: #FFF;
+    min-height: 300px;
+    margin: 0px;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+.genHeading {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 5px;
+}
+
+.genSubHeading {
+        color: #DAE6F0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        line-height: 0px;
+}
+
+.genParagraph {
+    color: #537692;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.a {
+    grid-column: 1;
+    grid-row: 1/4;
+    }
+
+.b {
+    grid-column: 2;
+    grid-row: 1/2;}
+.c {
+    grid-column: 2;
+    grid-row: 2/4;}
+
+.aa {
+    grid-column: 1;
+    grid-row: 4/8;}
+.bb {
+    grid-column: 2;
+    grid-row: 4/6;}
+.cc {
+    grid-column: 2;
+    grid-row: 6/8;}
+
+.aaa {
+    grid-column: 1;
+    grid-row: 8/12;}
+.bbb {
+    grid-column: 2;
+    grid-row: 8/10;}
+.ccc {
+    grid-column: 2;
+    grid-row: 10/12;}
+
+.aaaa {
+    grid-column: 1;
+    grid-row: 12/16;}
+.bbbb {
+    grid-column: 2;
+    grid-row: 12/14;}
+.cccc {
+    grid-column: 2;
+    grid-row: 14/16;}
+
+
+/* Practical Information */
+
+.e {
+    grid-column: 1 / -1;
+    grid-row: 1;}
+.f {
+    grid-column: 1;
+    grid-row: 2;}
+.g {
+    grid-column: 2 / -1;
+    grid-row: 2;}
+.h {
+    grid-column: 1;
+    grid-row: 3;}
+.i {
+    grid-column: 2 / -1;
+    grid-row: 3;}
+.j {
+    grid-column: 1;
+    grid-row: 4 / 6;}
+.k {
+    grid-column: 2 / -1;
+    grid-row: 4;}
+.l {
+    grid-column: 2 / -1;
+    grid-row: 5;}
+.m {
+    grid-column: 1;
+    grid-row: 6 / 8;}
+.n {
+    grid-column: 2 / -1;
+    grid-row: 6;}
+.o {
+    grid-column: 2 / -1;
+    grid-row: 7;}
+}
+
+/* Images & Media
+------------------------------ */
+
+.info, .box {
+    background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0 , 0.45);
+    border-radius: 26px;
+    padding: 1em;
+}
+
+.assesment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10% 10% 10% 55%;
+    text-align: left;}
+
+#upButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    background: url(up.svg);
+    cursor: pointer;
+    padding: 15px;
+}
+
+#upButton:hover {
+    border-top: 1px solid #292929;
+}
+
+.button {
+	border-radius: 18px;
+	border: 2px solid #525455;
+	display: inline-block;
+	cursor: pointer;
+	color: #525455;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	padding: 8px 24px;
+	text-decoration:none;
+}
+.button:hover {
+	border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #525455;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+ul.dashboard {
+    margin: 16% 16% 0 0;
+    list-style: none;
+}
+
+ul.dashboard li {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+ul.dashboard li a {
+    border: 2px solid #ffffff;
+}
+
+ul.dashboard li a:hover {
+     color: #525455;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+ul.dashboard {
+    margin: 6% 16% 0 16%;}
+
+ul.dashboard li {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    font-size: 18px;
+    }}
+
+.e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o{
+    background-color: #ffffff;
+    border: 1px solid #111111;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.2em;}
+
+
+/*  Search */
+
+input {
+    color: #525355;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
