@@ -1,6 +1,6 @@
 [
     {
-        "question": [],
-        "answer": []
+        "question": ["Can I retake the exam?", "Can I retake the exam if I was ill?"],
+        "answer": ["Students who fail the first exam attempt are offered two more attempts. Re-exams are held within two months of the first attempt. The extent of the re-exam is based on an academic assessment of the reason for the need for a re-exam. The purpose of the re-exam is the same as for the ordinary exam.", "Re-exams due to documented illness or for other acceptable reasons are held within two months of the ordinary exam. If KEA estimates that the student has been almost fully active during the exam project period, the re-exam will be based on the initial problem statement. If KEA estimates that the student has not been almost fully active during the exam project period, the re-exam will be based on a new problem statement."]
     }
     ]
