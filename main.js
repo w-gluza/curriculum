@@ -81,11 +81,6 @@ var usedTags = [
   {path: '/general.html', tags: 'schedule general information'},
 ]
 
-function usedTags {
-    if(usedTags[i]) = tags
-console.log(path);
-
-}
 /*
 var searchTags = {
     "communication",
