@@ -68,8 +68,8 @@ window.onscroll = function() {scrollFunction()};
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
 }
-/*
-[
+
+var usedTags = [
   {path: „/business.html”, tags: „business economy management”},
   {path: „/communication.html”, tags: „communication selfdevelopment coreareas”},
   {path: „/design.html”, tags: „design user interface UI”},
@@ -81,6 +81,12 @@ window.onscroll = function() {scrollFunction()};
   {path: „/general.html”, tags: „schedule general information”},
 ]
 
+function usedTags {
+    if(usedTags[i]) = tags
+console.log(path);
+
+}
+/*
 var searchTags = {
     "communication",
     "design",
