@@ -97,3 +97,31 @@ var searchTags = {
     "programme",
     "schedule",
 } */
+
+
+
+//SEARCH SZPEJ
+
+        function abroadSearch(){
+            window.location.replace('/abroad.html');
+        }
+
+        function examSearch(){
+            window.location.replace('/exam.html');
+        }
+
+        function electiveSearch(){
+            window.location.replace('/elective.html');
+        }
+
+        function programmeSearch(){
+            window.location.replace('/programme.html');
+        }
+
+        function practicalSearch(){
+            window.location.replace('/practical.html');
+        }
+
+        function generalSearch(){
+            window.location.replace('/general.html');
+        }
