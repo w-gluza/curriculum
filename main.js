@@ -70,15 +70,15 @@ window.onscroll = function() {scrollFunction()};
 }
 
 var usedTags = [
-  {path: „/business.html”, tags: „business economy management”},
-  {path: „/communication.html”, tags: „communication selfdevelopment coreareas”},
-  {path: „/design.html”, tags: „design user interface UI”},
-  {path: „/programme.html”, tags: „programming coding UX web development”},
-  {path: „/elective.html”, tags: „electives erasmus”},
-  {path: „/exam.html”, tags: „exam evaluation ECTS grades”},
-  {path: „/internship.html”, tags: „internship work ECTS grades”},
-  {path: „/practical.html”, tags: „practical FAQ”},
-  {path: „/general.html”, tags: „schedule general information”},
+  {path: '/business.html', tags: 'business economy management'},
+  {path: '/communication.html', tags: 'communication selfdevelopment coreareas'},
+  {path: '/design.html', tags: 'design user interface UI'},
+  {path: '/programme.html', tags: 'programming coding UX web development'},
+  {path: '/elective.html', tags: 'electives erasmus'},
+  {path: '/exam.html', tags: 'exam evaluation ECTS grades'},
+  {path: '/internship.html', tags: 'internship work ECTS grades'},
+  {path: '/practical.html', tags: 'practical FAQ'},
+  {path: '/general.html', tags: 'schedule general information'},
 ]
 
 function usedTags {
