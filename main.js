@@ -68,8 +68,8 @@ window.onscroll = function() {scrollFunction()};
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
 }
-
-var usedTags = [
+/*
+let usedTags = [
   {path: '/business.html', tags: 'business economy management'},
   {path: '/communication.html', tags: 'communication selfdevelopment coreareas'},
   {path: '/design.html', tags: 'design user interface UI'},
@@ -80,7 +80,12 @@ var usedTags = [
   {path: '/practical.html', tags: 'practical FAQ'},
   {path: '/general.html', tags: 'schedule general information'},
 ]
+ usedTags.forEach(function(usedTags2) {
+ console.log(' - ' + we use it);
 
+ });
+
+*/
 /*
 var searchTags = {
     "communication",
