@@ -179,35 +179,43 @@ img{
 }
 
 .gn-icon-search:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-home:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-general:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-practical:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-program:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-download:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-elective:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 .gn-icon-abroad:hover{
-    background-color:#fccc5d;
+    background-color:#2c4054;
+    color: white;
 }
 
 /* burger menu BEFORE open */
