@@ -365,7 +365,7 @@ section{
     color: #537692;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: em;
     padding: 15px;
 }
 
@@ -378,7 +378,9 @@ section{
 .gen-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    margin: 10% 15% 10% 15%;}
+    margin: 10% 15% 10% 15%;
+        grid-gap: 0px;
+}
 
 .a {
     grid-column: 1;
@@ -424,7 +426,7 @@ section{
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
 
 .genHeading {
     margin-top: 15%;
@@ -435,13 +437,15 @@ section{
 }
 
 .c, .cc, .ccc, .cccc{
-    margin-bottom: 25%;}
+    margin-bottom: 20%;
+    height: 225px;}
 
 .gen-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
     margin: 10% 15% 10% 15%;
-    grid-gap: 0px;}
+    grid-gap: 0px;
+    }
 
 .a {
     grid-column: 1;
