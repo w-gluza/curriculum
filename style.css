@@ -63,6 +63,7 @@ img{
     width: 100%;
     height: 60px;
     font-size: 14px;
+    z-index: 99;
 }
 
 .menu-top a {
@@ -84,6 +85,7 @@ img{
 .menu-top li.trigger {
     position: relative;
     width: 60px;
+    z-index: 99;
 }
 
 
@@ -111,6 +113,7 @@ img{
     background: white;
     transform: translateX(-60px);
     transition: transform 0.3s, width 0.3s;
+    z-index: 99;
 }
 
 .scroller {
@@ -118,6 +121,7 @@ img{
     overflow-y: scroll;
     width: 370px;
     height: 100%;
+    z-index: 99;
 }
 
 /* border of the last/bottom line in the menu, while is open*/
@@ -634,4 +638,47 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     padding: 5px;
+}
+
+/* Vertical Text */
+
+.whereami {
+    position: relative;
+    top: 150px;
+    left: -45px;
+    width: 100px;
+    min-height: 400px;
+    margin: 10px;
+}
+
+.line {
+    position: absolute;
+    left: 49%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #525355;
+
+}
+
+.wordwrapper {
+    text-align: center;
+    height: 12px;
+    position: absolute;
+    left: -42px;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+
+}
+
+.word {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    background-color: #F0F0F1;
+    color: #525355;
+    letter-spacing: 1px;
+    padding: 3px;
+    transform: rotate(-90deg);
 }
