@@ -428,6 +428,7 @@ p {
 
 .c, .cc, .ccc, .cccc{
     margin-bottom: 20%;
+    padding: 0.1em;
     height: 225px;}
 
 .gen-wrapper {
