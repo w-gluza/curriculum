@@ -562,7 +562,8 @@ section{
     outline: none;
     background: url(up.svg);
     cursor: pointer;
-    padding: 15px;
+    padding: 1.5em;
+    margin: 1%;
 }
 
 #upButton:hover {
@@ -571,6 +572,7 @@ section{
 
 .button {
 	border: 2px solid #525455;
+    border-radius: 18px;
 	display: inline-block;
 	cursor: pointer;
 	color: #525455;
