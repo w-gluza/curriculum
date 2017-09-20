@@ -643,7 +643,7 @@ input {
 /* Vertical Text */
 
 .whereami {
-    position: relative;
+    position: fixed;
     top: 150px;
     left: -45px;
     width: 100px;
@@ -652,25 +652,61 @@ input {
 }
 
 .line {
-    position: absolute;
-    left: 49%;
-    top: 0;
+    position: fixed;
+    left: 25px;
+    top: 140px;
     bottom: 0;
     width: 2px;
+    height: 400px;
     background: #525355;
 
 }
 
-.wordwrapper {
+.wordwrapperGen {
     text-align: center;
     height: 12px;
-    position: absolute;
-    left: -42px;
+    position: fixed;
+    left: -106px;
     right: 0;
-    top: 50%;
+    top: 52.5%;
     margin-top: -12px;
-
 }
+
+.wordwrapperGen, .wordwrapperStud, .wordwrapperEx, .wordwrapperEle, .wordwrapperProg, .wordwrapperPrac{
+    text-align: center;
+    height: 12px;
+    margin-top: -12px;
+}
+
+.wordwrapperGen{
+    position: fixed;
+    left: -106px;
+    top: 52.5%;}
+
+.wordwrapperStud{
+    position: fixed;
+    left: -66px;
+    top: 50%;}
+
+.wordwrapperEx{
+    position: fixed;
+    left: -92px;
+    top: 50%;}
+
+.wordwrapperEle{
+    position: fixed;
+    left: -132px;
+    top: 52.5%;}
+
+.wordwrapperProg{
+    position: fixed;
+    left: -47px;
+    top: 52.5%;}
+
+.wordwrapperPrac{
+    position: fixed;
+    left: -116px;
+    top: 52.5%;}
 
 .word {
     position: absolute;
