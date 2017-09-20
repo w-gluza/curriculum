@@ -65,16 +65,49 @@
             <li><a href="index.html"><span>HOME</span></a></li>
             <li><a href="http://kea.dk">KEA</a></li>
         </ul>
-        <section class="assesment">
+       <div class="assesment">
             <h2>ASSESMENT SYSTEM</h2>
            <h4>The exam will consist of three elements:</h4>
            <h3>1. Presentation<br>2. Examination<br>3. Grading and feedback</h3>
            <p>The exam is assessed by the examiner and an internal co-examiner according to the 7-point grading scale. Students are awarded one grade for their overall performance, covering production, profile, presentation and exam. The performance is assessed on the basis of whether the students have understood the third-semester goals and learning objectives, as described in the curriculum, and how they are presented.</p>
-        </section>
+        </div>
+
+         <section id="examList"></section>
+ +    <template id="examTemplate">
+ +       <article class="exam">
+ +            <h2 class="question">QUESTION</h2>
+ +           <p class="answer">ANSWER</p>
+ +           </article>
+ +    </template>
+
         <button onclick="topFunction()" id="upButton"></button>
     </div>
     <!-- /container -->
     <script src="main.js"></script>
     <script src="search.js"></script>
+    <script>
+ +        getExam('faq.json');
+ +
+ +    let examTemplate = document.querySelector('#examTemplate').content;
+ +    let section = document.querySelector('#examList');
+ +    let exam = document.querySelector('.exam');
+ +
+ +          function getExam(file) {
+ +            fetch(file).then(function (response) {
+ +                return response.json();
+ +            }).then(function (json) {
+ +                return show(json);
+ +            });
+ +        }
+ +
+ +        function show(json) {
+ +            json.forEach(function(exam){
+ +                let clone = examTemplate.cloneNode(true);
+ +               clone.querySelector('.question').textContent=exam.question;
+ +                clone.querySelector('.answer').textContent=exam.answer;
+ +                section.appendChild(clone);
+ +            });
+ +        }
+ +        </script>
 </body>
 </html>
