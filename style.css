@@ -26,10 +26,9 @@
     height: 100%;
 }
 
-.info, .box {
+.info {
     background: #fff;
     box-shadow: 0px 0px 3px rgba(0, 0, 0 , 0.45);
-    border-radius: 26px;
     padding: 1em;
 }
 img{
@@ -313,27 +312,6 @@ p {
 /* CSS Grid
 ------------------------------ */
 
-section{
-    margin: 0 5% 5% 5%;
-    padding: 1em;}
-
-.grid-wrapper{
-    display: grid;
-    grid-gap: 20px;
-    margin: 25% 5% 5% 5%;}
-
-@media (min-width: 768px) {
-
-section{
-    margin: 1% 18% 1% 18%;
-    padding: 1em;}
-
-.grid-wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 2fr 2fr 2fr;
-    margin: 12% 18% 2% 18%;}}
-
     /* General Information */
 
 .gen-wrapper{
@@ -497,7 +475,44 @@ section{
     grid-column: 2;
     grid-row: 14/16;}}
 
-/* Practical Information */
+/* Practical Information & Programme Information*/
+
+section{
+    margin: 0 5% 5% 5%;
+    padding: 1em;}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 5px;
+    margin: 25% 5% 5% 5%;}
+
+.e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o{
+    padding: 1em;}
+
+.f, .h, .j, .m{
+    background-color: #537692;
+    color: #fff;
+}
+
+.g, .i, .k, .l, .n, .o{
+    background-color: #fff;
+}
+
+.e {
+    background-color: #2C4054;
+    border-bottom: 1px solid #fff;
+    color: #fff;}
+
+@media (min-width: 768px) {
+
+section{
+    margin: 1% 18% 1% 18%;
+    padding: 1em;}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 12% 18% 2% 18%;}
 
 .e {
     grid-column: 1 / -1;
@@ -555,7 +570,6 @@ section{
 }
 
 .button {
-	border-radius: 18px;
 	border: 2px solid #525455;
 	display: inline-block;
 	cursor: pointer;
@@ -609,14 +623,6 @@ ul.dashboard li {
     padding: 0.5em;
     font-size: 18px;
     }}
-
-.e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o{
-    background-color: #ffffff;
-    border: 1px solid #111111;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0.2em;}
-
 
 /*  Search */
 
