@@ -29,8 +29,7 @@
 .info {
     background: #fff;
     box-shadow: 0px 0px 3px rgba(0, 0, 0 , 0.45);
-    padding: 1em;
-}
+    padding: 1em;}
 img{
     width: 100%;
     height: auto;
@@ -312,29 +311,6 @@ p {
     text-align: left;
 }
 
-
-/* CSS Grid
------------------------------- */
-
-    /* General Information */
-
-.gen-wrapper{
-    display: grid;
-    margin: 25% 5% 5% 5%;}
-
-.b, .bb, .bbb, .bbbb{
-   background-color: #2C4054;
-}
-.a{
-    margin: 0;
-    padding: 0;}
-
-.c, .cc, .ccc, .ccc, .cccc{
-   background-color: #FFF;
-    margin-bottom: 5%;
-    padding: 10px;
-}
-
 .genHeading {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -359,6 +335,26 @@ p {
     padding: 15px;
 }
 
+.b, .bb, .bbb, .bbbb{
+   background-color: #2C4054;
+}
+
+.c, .cc, .ccc, .ccc, .cccc{
+    background-color: #FFF;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+
+/* CSS Grid
+------------------------------ */
+
+    /* General Information */
+
+.gen-wrapper{
+    display: grid;
+    margin: 25% 10% 5% 10%;}
+
 @media (min-width: 768px) {
 
 .genHeading {
@@ -368,9 +364,7 @@ p {
 .gen-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    margin: 10% 15% 10% 15%;
-        grid-gap: 0px;
-}
+    margin: 10% 15% 10% 15%;}
 
 .a {
     grid-column: 1;
@@ -489,7 +483,7 @@ section{
 .grid-wrapper{
     display: grid;
     grid-gap: 5px;
-    margin: 25% 5% 5% 5%;}
+    margin: 25% 10% 5% 10%;}
 
 .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o{
     padding: 1em;}
@@ -560,8 +554,8 @@ section{
 #upButton {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 8px;
+    right: 8px;
     z-index: 2;
     border: none;
     outline: none;
@@ -573,6 +567,12 @@ section{
 
 #upButton:hover {
     border-top: 1px solid #292929;
+}
+
+@media (min-width: 768px) {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 .button {
@@ -657,27 +657,59 @@ input {
     left: 25px;
     top: 140px;
     bottom: 0;
-    width: 2px;
+    width: 1px;
     height: 400px;
-    background: #525355;
+    background: #525355;}
 
-}
-
-.wordwrapperGen {
-    text-align: center;
-    height: 12px;
-    position: fixed;
-    left: -106px;
-    right: 0;
-    top: 52.5%;
-    margin-top: -12px;
-}
+.word {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #F0F0F1;
+    color: #525355;
+    letter-spacing: 1px;
+    padding: 3px;
+    transform: rotate(-90deg);
+    }
 
 .wordwrapperGen, .wordwrapperStud, .wordwrapperEx, .wordwrapperEle, .wordwrapperProg, .wordwrapperPrac{
     text-align: center;
     height: 12px;
     margin-top: -12px;
 }
+
+.wordwrapperGen{
+    position: fixed;
+    left: -67px;
+    top: 52.5%;}
+
+.wordwrapperStud{
+    position: fixed;
+    left: -38px;
+    top: 50%;}
+
+.wordwrapperEx{
+    position: fixed;
+    left: -57px;
+    top: 50%;}
+
+.wordwrapperEle{
+    position: fixed;
+    left: -84px;
+    top: 52.5%;}
+
+.wordwrapperProg{
+    position: fixed;
+    left: -25px;
+    top: 52.5%;}
+
+.wordwrapperPrac{
+    position: fixed;
+    left: -74px;
+    top: 52.5%;}
+
+
+@media (min-width: 768px) {
 
 .wordwrapperGen{
     position: fixed;
@@ -709,13 +741,10 @@ input {
     left: -116px;
     top: 52.5%;}
 
+.line{
+    width: 2px;}
+
 .word {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    background-color: #F0F0F1;
-    color: #525355;
-    letter-spacing: 1px;
-    padding: 3px;
-    transform: rotate(-90deg);
-}
+;
+    }}
