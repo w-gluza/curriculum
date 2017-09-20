@@ -9,7 +9,8 @@
     <meta name="author" content="Fuck Up Group">
     <script src="https://use.fontawesome.com/497d596fa5.js"></script>
     <script type="text/javascript" src="jquery-3.2.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"></head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 <body id="ass">
     <div class="container">
@@ -18,40 +19,42 @@
                 <a class="gn-icon gn-icon-menu"></a>
                 <nav class="gn-menu-wrapper">
                     <div class="scroller">
-                         <ul class="gn-menu">
-                            <li><a class="gn-icon gn-icon-search">
-                                <select id="listBox1">
-                                    <option></option>
-                                    <option onclick="generalSearch()">Schedule</option>
-                                    <option onclick="generalSearch()">General</option>
-                                    <option onclick="generalSearch()">Information</option>
-                                    <option onclick="practicalSearch()">FAQ</option>
-                                    <option onclick="practicalSearch()">Practical</option>
-                                    <option onclick="practicalSearch()">Semester</option>
-                                    <option onclick="practicalSearch()">ECTS</option>
-                                    <option onclick="electiveSearch()">Internship</option>
-                                    <option onclick="electiveSearch()">Work</option>
-                                    <option onclick="electiveSearch()">Electives</option>
-                                    <option onclick="examSearch()">Exam</option>
-                                    <option onclick="examSearch()">Evaluation</option>
-                                    <option onclick="examSearch()">Grades</option>
-                                    <option onclick="examSearch()">Presentation</option>
-                                    <option onclick="examSearch()">Midterm</option>
-                                    <option onclick="examSearch()">Final</option>
-                                    <option onclick="programmeSearch()">Programme</option>
-                                    <option onclick="programmeSearch()">Web Debelopment</option>
-                                    <option onclick="programmeSearch()">Coding</option>
-                                    <option onclick="programmeSearch()">UX</option>
-                                    <option onclick="programmeSearch()">Programming</option>
-                                    <option onclick="programmeSearch()">Communication</option>
-                                    <option onclick="programmeSearch()">Design</option>
-                                    <option onclick="programmeSearch()">Business</option>
-                                    <option onclick="abroadSearch()">Abroad</option>
-                                    <option onclick="abroadSearch()">International</option>
-                                    <option onclick="abroadSearch()">Exchange</option>
-                                    <option onclick="abroadSearch()">Erasmus</option>
-
-                                </select> </a></li>
+                        <ul class="gn-menu">
+                            <li>
+                                <a class="gn-icon gn-icon-search">
+                                    <select id="listBox1">
+                                        <option></option>
+                                        <option onclick="generalSearch()">Schedule</option>
+                                        <option onclick="generalSearch()">General</option>
+                                        <option onclick="generalSearch()">Information</option>
+                                        <option onclick="practicalSearch()">FAQ</option>
+                                        <option onclick="practicalSearch()">Practical</option>
+                                        <option onclick="practicalSearch()">Semester</option>
+                                        <option onclick="practicalSearch()">ECTS</option>
+                                        <option onclick="electiveSearch()">Internship</option>
+                                        <option onclick="electiveSearch()">Work</option>
+                                        <option onclick="electiveSearch()">Electives</option>
+                                        <option onclick="examSearch()">Exam</option>
+                                        <option onclick="examSearch()">Evaluation</option>
+                                        <option onclick="examSearch()">Grades</option>
+                                        <option onclick="examSearch()">Presentation</option>
+                                        <option onclick="examSearch()">Midterm</option>
+                                        <option onclick="examSearch()">Final</option>
+                                        <option onclick="programmeSearch()">Programme</option>
+                                        <option onclick="programmeSearch()">Web Debelopment</option>
+                                        <option onclick="programmeSearch()">Coding</option>
+                                        <option onclick="programmeSearch()">UX</option>
+                                        <option onclick="programmeSearch()">Programming</option>
+                                        <option onclick="programmeSearch()">Communication</option>
+                                        <option onclick="programmeSearch()">Design</option>
+                                        <option onclick="programmeSearch()">Business</option>
+                                        <option onclick="abroadSearch()">Abroad</option>
+                                        <option onclick="abroadSearch()">International</option>
+                                        <option onclick="abroadSearch()">Exchange</option>
+                                        <option onclick="abroadSearch()">Erasmus</option>
+                                    </select>
+                                </a>
+                            </li>
                             <li><a href="general.html" class="gn-icon gn-icon-general">General Information</a></li>
                             <li><a href="practical.html" class="gn-icon gn-icon-practical">Programme Structure</a></li>
                             <li><a href="programme.html" class="gn-icon gn-icon-program">Core Areas</a></li>
@@ -64,49 +67,47 @@
             </li>
             <li><a href="index.html"><span>HOME</span></a></li>
         </ul>
-       <div class="assesment">
+        <div class="assesment">
             <h2>ASSESMENT SYSTEM</h2>
-           <h4>The exam will consist of three elements:</h4>
-           <h3>1. Presentation<br>2. Examination<br>3. Grading and feedback</h3>
-           <p>The exam is assessed by the examiner and an internal co-examiner according to the 7-point grading scale. Students are awarded one grade for their overall performance, covering production, profile, presentation and exam. The performance is assessed on the basis of whether the students have understood the third-semester goals and learning objectives, as described in the curriculum, and how they are presented.</p>
+            <h4>The exam will consist of three elements:</h4>
+            <h3>1. Presentation<br>2. Examination<br>3. Grading and feedback</h3>
+            <p>The exam is assessed by the examiner and an internal co-examiner according to the 7-point grading scale. Students are awarded one grade for their overall performance, covering production, profile, presentation and exam. The performance is assessed on the basis of whether the students have understood the third-semester goals and learning objectives, as described in the curriculum, and how they are presented.</p>
         </div>
-
-         <section id="examList"></section>
- +    <template id="examTemplate">
- +       <article class="exam">
- +            <h2 class="question">QUESTION</h2>
- +           <p class="answer">ANSWER</p>
- +           </article>
- +    </template>
-
+        <section id="examList"></section>
+        <template id="examTemplate">
+            <article class="exam">
+                <h2 class="question">QUESTION</h2>
+                <p class="answer">ANSWER</p>
+            </article>
+        </template>
         <button onclick="topFunction()" id="upButton"></button>
     </div>
     <!-- /container -->
     <script src="main.js"></script>
     <script src="search.js"></script>
     <script>
- +        getExam('faq.json');
- +
- +    let examTemplate = document.querySelector('#examTemplate').content;
- +    let section = document.querySelector('#examList');
- +    let exam = document.querySelector('.exam');
- +
- +          function getExam(file) {
- +            fetch(file).then(function (response) {
- +                return response.json();
- +            }).then(function (json) {
- +                return show(json);
- +            });
- +        }
- +
- +        function show(json) {
- +            json.forEach(function(exam){
- +                let clone = examTemplate.cloneNode(true);
- +               clone.querySelector('.question').textContent=exam.question;
- +                clone.querySelector('.answer').textContent=exam.answer;
- +                section.appendChild(clone);
- +            });
- +        }
- +        </script>
+        getExam('faq.json');
+        let examTemplate = document.querySelector('#examTemplate').content;
+        let section = document.querySelector('#examList');
+        let exam = document.querySelector('.exam');
+
+        function getExam(file) {
+            fetch(file).then(function (response) {
+                return response.json();
+            }).then(function (json) {
+                return show(json);
+            });
+        }
+
+        function show(json) {
+            json.forEach(function (exam) {
+                let clone = examTemplate.cloneNode(true);
+                clone.querySelector('.question').textContent = exam.question;
+                clone.querySelector('.answer').textContent = exam.answer;
+                section.appendChild(clone);
+            });
+        }
+    </script>
 </body>
+
 </html>
