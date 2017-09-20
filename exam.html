@@ -77,7 +77,8 @@
         <section id="examList"></section>
         <template id="examTemplate">
             <article class="exam">
-                <h2 class="question">QUESTION</h2>
+                <h2 class="title">TITLE</h1>
+                <h3 class="question">QUESTION</h2>
                 <p class="answer">ANSWER</p>
             </article>
         </template>
@@ -103,8 +104,9 @@
         function show(json) {
             json.forEach(function (exam) {
                 let clone = examTemplate.cloneNode(true);
-                clone.querySelector('.question').textContent = exam.question;
-                clone.querySelector('.answer').textContent = exam.answer;
+                clone.querySelector('.title').textContent = exam.title;
+                clone.querySelector('.question').innerHTML = exam.question.join('<br/>');
+                clone.querySelector('.answer').innerHTML = exam.answer.join('<br/>');
                 section.appendChild(clone);
             });
         }
