@@ -11,7 +11,8 @@
 /* General Content
 ------------------------------ */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300|Open+Sans');
+
 
 #index {                                            /*new working background14.09.17 10:43*/
     background-image: url('background-01.jpg');
@@ -28,8 +29,7 @@
 
 .info {
     background: #fff;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0 , 0.45);
-    padding: 1em;}
+    box-shadow: 0px 0px 3px rgba(0, 0, 0 , 0.45);}
 img{
     width: 100%;
     height: auto;
@@ -287,28 +287,43 @@ h1 {
     box-shadow: 15px 0 0px 0px #fff, -15px 0 0px 0px #fff;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-align: left;
-}
-
 h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-align: left;
-}
-
-h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: left;
 }
 
-p {
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 2em;
+    padding: 0.75em;
+    background-color: #2C4054;
+    color: #fff;}
+
+.cukinia {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 1em;
+    background-color: #537692;
+    color: #fff;
+    padding: 0.75em;
+}
+
+h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-align: left;
+}
+
+.contents, .knowledge, .introduction, .introductionB, .skills, .introductionC, .competencies {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 0.75em;
+
 }
 
 .genHeading {
