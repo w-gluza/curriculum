@@ -461,7 +461,7 @@ h4 {
 .gen-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    margin: 10% 15% 10% 15%;
+    margin: 10% 15% 1% 15%;
     grid-gap: 0px;
     }
 
@@ -510,8 +510,7 @@ h4 {
 /* Practical Information & Programme Information*/
 
 section{
-    margin: 0 5% 5% 5%;
-    padding: 1em;}
+    margin: 0 10% 5% 10%;}
 
 .grid-wrapper{
     display: grid;
@@ -538,8 +537,7 @@ section{
 @media (min-width: 768px) {
 
 section{
-    margin: 1% 18% 1% 18%;
-    padding: 1em;}
+    margin: 1% 15% 0% 15%;}
 
 .grid-wrapper {
     display: grid;
