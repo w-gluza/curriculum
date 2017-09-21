@@ -1,7 +1,7 @@
 [
     {
         "name": "Electives",
-        "image": "test.jpg",
+        "image": "images/electives.jpg",
         "contents": "Students can choose between elective subjects within one or more of the following subject areas: Business, Communication and Presentation, Interaction Development and Design and Visualisation.",
         "introduction": "You will gain development-based knowledge and an understanding of:",
         "knowledge": ["- the requirements and expectations of companies with regard to the multimedia designer’s knowledge, skills and attitudes towards the work,", "- the practice-related use of theory, method and tools."],
