@@ -5,7 +5,22 @@
     }, {
         "q":"Can I retake the exam if I was ill?",
         "a":"Re-exams due to documented illness or for other acceptable reasons are held within two months of the ordinary exam. If KEA estimates that the student has been almost fully active during the exam project period, the re-exam will be based on the initial problem statement."
-    }
-
+    }, {"q": "How important are writing and spelling skills in the assessment?",
+       "a": "Spelling and writing skills are taken into account in the assessment of the final exam project. If the project contains a large number of major spelling and writing mistakes, the grade awarded may be lowered by one increment, for example from 7 to 4."
+       }, {
+           "q": "What is commencement of studies exam?",
+           "a": "Students on the Multimedia Design and Communication programme must participate in and pass the commencement of studies exam to continue on the programme. The exam is intended to establish whether students have actually commenced their studies. The exam consists of a number of tasks related to fundamental elements from the first 7-8 weeks of the programme. The commencement of studies exam must be held no later than two months after the start of the programme, and the result must be announced to the students within two weeks of the exam. The commencement of studies exam is assessed internally as ‘Pass’ or ‘Fail’."
+       }, {
+           "q": "What if I fail commencement of studies exam?",
+           "a": "Students who fail the exam have the opportunity to participate in a re-exam (only one), which is held no later than three months after the start of the programme. Students are entitled to two attempts to pass the commencement of studies exam."
+       },
+    {
+           "q": "What are the rules regarding plagiarism?",
+           "a": "Projects and other material in connection with exams must be prepared by the students independently. Students who unlawfully present other people’s work as being their own (plagiarism) or who use their own previously assessed work without stating the source will be expelled from the exam.  Students may also be expelled after the exam.  Expulsion from an exam due to cheating means that any grade already awarded will be withdrawn, and the student will have used one exam attempt."
+       },
+    {
+           "q": "What are inappropriate behaviours during exams?",
+           "a": "Students who cheat at an exam will be expelled from the exam. In case of aggravating circumstances, students may be suspended from the institution for a long or short period of time. Cheating includes: obtaining unlawful help during an exam, providing unlawful help to other students during an exam, presenting other people’s work as one’s own (plagiarism), using materials and aids not permitted for the exam in question. Students who exhibit disruptive behaviour during an exam may be ordered to leave the exam. In less serious cases, KEA will first warn the students."
+       }
     ]
 
