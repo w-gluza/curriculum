@@ -313,9 +313,26 @@ h3 {
 }
 
 h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     text-align: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.practicalSub{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.75em;
+    font-size: 1.25em;
+}
+.practicalParagraph{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.75em;
+    font-size: 1.25em;
 }
 
 .contents, .knowledge, .introduction, .introductionB, .skills, .introductionC, .competencies {
@@ -501,7 +518,7 @@ section{
     margin: 25% 10% 5% 10%;}
 
 .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o{
-    padding: 1em;}
+    padding: 0.25em;}
 
 .f, .h, .j, .m{
     background-color: #537692;
