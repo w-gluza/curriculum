@@ -14,7 +14,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300|Open+Sans');
 
 
-#index {                                            /*new working background14.09.17 10:43*/
+#index {
     background-image: url('background-01.jpg');
    background-size: cover;
     background-attachment: fixed;
@@ -595,8 +595,6 @@ section{
     bottom: -5px;
     right: -15px;
     opacity: 0.2;
-
-
 }
 
 .upButton:hover {
@@ -615,21 +613,13 @@ section{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0.2;
-
-
-}
+    opacity: 0.2;}
 
 .upButton:hover {
     border-top: 1px solid #292929;
     opacity: 1;
-}
+    }}
 
-@media (min-width: 768px) {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
 
 .button {
 	border: 1px solid #2c4054;
