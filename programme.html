@@ -82,7 +82,7 @@
     <template id="infoTemplate">
        <article class="info">
             <h2 class="name">NAME</h2>
-           <div class="image">IMAGE</div>
+           <img class="image">
            <p class="contents">CONTENTS</p>
            <h3 class="cukinia">Knowledge</h3>
            <p class="introduction">INTRODUCTION</p>
@@ -108,6 +108,7 @@
     let infoTemplate = document.querySelector('#infoTemplate').content;
     let section = document.querySelector('#infoList');
     let info = document.querySelector('.info');
+    let base = "http://kea-alt-del.dk/t5/site/imgs/";
 
 
           function getData(file) {
@@ -182,6 +183,7 @@
                 let clone = infoTemplate.cloneNode(true);
                 clone.innerHTML='';
                 clone.querySelector('.name').textContent=info.name;
+                clone.querySelector('.image').src=info.image;
                 clone.querySelector('.contents').textContent=info.contents;
             clone.querySelector('.introduction').textContent=info.introduction;
 

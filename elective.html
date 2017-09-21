@@ -78,6 +78,7 @@
     <template id="infoTemplate">
        <article class="info">
             <h2 class="name">NAME</h2>
+           <img class="image">
            <p class="contents">CONTENTS</p>
            <h3 class="cukinia">Knowledge</h3>
            <p class="introduction">INTRODUCTION</p>
@@ -150,6 +151,7 @@
                 let clone = infoTemplate.cloneNode(true);
                 clone.innerHTML='';
                 clone.querySelector('.name').textContent=info.name;
+                clone.querySelector('.image').src=info.image;
                 clone.querySelector('.contents').textContent=info.contents;
                 clone.querySelector('.introduction').textContent=info.introduction;
 
