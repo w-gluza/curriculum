@@ -2,6 +2,9 @@
 
     {
         "name": "Interaction Development",
+        "image": {
+            "src": "images/travel1.jpg",
+        },
         "contents": "You will be able to model, format, structure, document and implement dynamic multimedia applications, have a basic understanding of system development and know how to structure and implement complex dynamic multimedia applications with the integration of databases.",
         "introduction": "You will gain development-based knowledge and an understanding of:",
         "knowledge": ["- object-oriented programming in relation to multimedia practice,", "- technical possibilities and limitations of development environments practice,", "- elements of Content Management Systems (CMS),", "- interfaces for exchanging data with third party services,", "- security aspects of networks, multimedia applications and data communication."],
