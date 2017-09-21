@@ -80,11 +80,13 @@
             <div class="c"> <p class="genParagraph">The exam is assessed according to the 7-point grading scale. Students are awarded one grade for their overall performance, covering production, profile, presentation and exam. The performance is assessed on the basis of whether you have understood the third-semester goals and learning objectives, as described in the curriculum, and how they are presented.</p></div>
         </div>
 
-        <section id="examList"></section>
+        <section id="examList">
+        <h2 class="title">FAQ</h2>
+        </section>
         <template id="examTemplate">
             <article class="exam">
-                <h2 class="title">TITLE</h1>
-                <h3 class="question">QUESTION</h2>
+
+                <h3 class="question">QUESTION</h3>
                 <p class="answer">ANSWER</p>
             </article>
         </template>
@@ -110,9 +112,9 @@
         function show(json) {
             json.forEach(function (exam) {
                 let clone = examTemplate.cloneNode(true);
-                clone.querySelector('.title').textContent = exam.title;
-                clone.querySelector('.question').innerHTML = exam.question.join('<br/>');
-                clone.querySelector('.answer').innerHTML = exam.answer.join('<br/>');
+
+                clone.querySelector('.question').innerHTML = exam.q
+                clone.querySelector('.answer').innerHTML = exam.a;
                 section.appendChild(clone);
             });
         }
