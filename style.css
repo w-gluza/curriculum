@@ -584,7 +584,27 @@ section{
 
 /* Images & Buttons
 ------------------------------ */
+.upButton {
+    float: right;
+    background: url(up.svg);
+    padding: 2em;
+    outline: none;
+    border: none;
+    margin: 1.5em;
+    position: fixed;
+    bottom: -5px;
+    right: -15px
+    opacity: 0.2;
 
+
+}
+
+.upButton:hover {
+    border-top: 1px solid #292929;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
 .upButton {
     float: right;
     background: url(up.svg);
