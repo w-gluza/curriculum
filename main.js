@@ -55,38 +55,33 @@ var closeMenu = function() {
 };
 
 
-document.getElementById('scroll-to-top').onclick = function () {
-    scrollTo(document.body, 0, 100);
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('upButton').style.display = 'block';
+  } else {
+    document.getElementById('upButton').style.display = 'none';
+  }
 }
 
-    function scrollTo(element, to, duration) {
-        if (duration < 0) return;
-        var difference = to - element.scrollTop;
-        var perTick = difference / duration * 2;
+document.getElementById('upButton').onclick = function() {
+  scrollTo(document.body, 0, 100);
+};
 
-    setTimeout(function() {
-        element.scrollTop = element.scrollTop + perTick;
-        scrollTo(element, to, duration - 2);
-    }, 10);
+function scrollTo(element, to, duration) {
+  if (duration < 0) return;
+  var difference = to - element.scrollTop;
+  var perTick = difference / duration * 2;
+
+  setTimeout(function() {
+    element.scrollTop = element.scrollTop + perTick;
+    scrollTo(element, to, duration - 2);
+  }, 10);
 }
 
- /*
-window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("upButton").style.display = "block";
-        } else {
-        document.getElementById("upButton").style.display = "none";
-    }
-}
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-}
-
-*/
 /*
 let usedTags = [
   {path: '/business.html', tags: 'business economy management'},
